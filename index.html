@@ -83,8 +83,6 @@
     function openLightbox(img) {
         const lightboxImg = document.getElementById('lb-img');
         lightboxImg.src = img.src;
-        // In the Lightbox view, we don't want the crop from the article view,
-        // so we explicitly set the height back to auto.
         lightboxImg.style.height = 'auto'; 
         document.getElementById('lightbox').style.display = 'flex';
     }
