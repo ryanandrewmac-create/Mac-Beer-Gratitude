@@ -1,9 +1,37 @@
+<style>
+    .lb-overlay {
+        display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.9); cursor: pointer; align-items: center; justify-content: center;
+    }
+    .lb-overlay img { max-width: 90%; max-height: 90%; box-shadow: 0 0 20px rgba(0,0,0,0.5); border: 2px solid #fff; }
+    .beer-gratitude-article img { cursor: zoom-in; transition: opacity 0.3s; }
+    .beer-gratitude-article img:hover { opacity: 0.9; }
+</style>
+
+<article class="beer-gratitude-article" style="max-width: 800px; margin: 0 auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px;">
+
+<style>
+    .lb-overlay {
+        display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.9); cursor: pointer; align-items: center; justify-content: center;
+    }
+    .lb-overlay img { max-width: 90%; max-height: 90%; box-shadow: 0 0 20px rgba(0,0,0,0.5); border: 2px solid #fff; }
+    .beer-gratitude-article img { cursor: zoom-in; transition: opacity 0.3s; }
+    .beer-gratitude-article img:hover { opacity: 0.9; }
+</style>
+
 <article class="beer-gratitude-article" style="max-width: 800px; margin: 0 auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px;">
     
     <header style="text-align: center; padding: 40px 0; border-bottom: 2px solid #eee; margin-bottom: 40px;">
-        <h1 style="font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; color: #000;">Beer Gratitude</h1>
-        <p style="font-style: italic; font-size: 1.2rem; color: #666;">A story about our amazing homebrewing community.</p>
+        <h1 style="font-size: 3rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; color: #000;">Beer Gratitude</h1>
+        <p style="text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; color: #999; margin-bottom: 20px;">By Ryan Mac</p>
+        <p style="font-style: italic; font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">A story about the support from our amazing homebrewing community during a difficult time.</p>
     </header>
+
+    <section style="margin-bottom: 30px;">
+        <p>Beer and the culture surrounding it are an important part of my life. That much is obvious if you simply take a look at how much of my time and attention gets dedicated to homebrewing and exploring the world of beer. But this year in particular, some things took me by surprise. I’d like to take a minute now to reflect on how incredible and supportive the beer community - the homebrewing community in particular - has been to me.</p>
+
+        <p>A bit of background, first. My homebrewing journey started over a decade ago. In 2015 I returned to the United States just before Christmas after spending the year working abroad and I needed a last-minute gift for my dad. Enter Northern Brewer’s 1 gallon “Craft Beer Making Kit” which we happily brewed together over the holiday. As best I can recall, it was a pale ale recipe and it came out decent for a couple of guys who didn’t have much of a clue what we were doing. But what I do vividly recall is my mother opening up all of the windows in the middle of a Michigan winter to air out the smell we created and
 
     <section style="margin-bottom: 30px;">
         <p>Beer and the culture surrounding it are an important part of my life. That much is obvious if you simply take a look at how much of my time and attention gets dedicated to homebrewing and exploring the world of beer. But this year in particular, some things took me by surprise. I’d like to take a minute now to reflect on how incredible and supportive the beer community - the homebrewing community in particular - has been to me.</p>
@@ -12,12 +40,12 @@
     </section>
 
     <div style="margin: 40px 0;">
-        <img src="ken1.jpg" alt="Ken 1" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 15px; display: block;">
-        <img src="ken2.jpg" alt="Ken 2" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 30px; display: block;">
+        <img src="ken1.jpg" onclick="openLightbox(this)" alt="Ken 1" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 15px; display: block;">
+        <img src="ken2.jpg" onclick="openLightbox(this)" alt="Ken 2" style="width: 100%; height: auto; border-radius: 4px; margin-bottom: 30px; display: block;">
 
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-            <img src="ken3.jpg" alt="Ken 3" style="width: 100%; height: auto; border-radius: 4px;">
-            <img src="ken4.jpg" alt="Ken 4" style="width: 100%; height: auto; border-radius: 4px;">
+            <img src="ken3.jpg" onclick="openLightbox(this)" alt="Ken 3" style="width: 100%; height: auto; border-radius: 4px;">
+            <img src="ken4.jpg" onclick="openLightbox(this)" alt="Ken 4" style="width: 100%; height: auto; border-radius: 4px;">
         </div>
     </div>
 
@@ -46,14 +74,14 @@
 
     <h3 style="text-align: center; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; color: #999; margin-top: 50px;">The Beer Mail</h3>
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 20px 0;">
-        <img src="1.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="2.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="3.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="4.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="5.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="6.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="7.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
-        <img src="8.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="1.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="2.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="3.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="4.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="5.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="6.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="7.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
+        <img src="8.jpg" onclick="openLightbox(this)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px;">
     </div>
 
     <footer style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee;">
@@ -62,4 +90,18 @@
         <p style="margin-top: 20px; font-size: 1.5rem;">Cheers! 🍻</p>
     </footer>
 
+    <div id="lightbox" class="lb-overlay" onclick="closeLightbox()">
+        <img id="lb-img" src="">
+    </div>
+
 </article>
+
+<script>
+    function openLightbox(img) {
+        document.getElementById('lb-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
