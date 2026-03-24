@@ -31,6 +31,31 @@
         margin-top: 40px; /* Top margin for separation */
         border-radius: 4px; /* Optional rounded corners */
     } 
+    
+    @media (max-width: 768px) {
+        /* Stack the side-by-side Ken photos */
+        .ken-grid { 
+            display: block !important; 
+        }
+        .ken-grid div {
+            margin-bottom: 20px;
+        }
+        .ken-grid img {
+            height: auto !important; /* Prevents the 350px height from squishing images */
+        }
+    
+        /* Stack the 4-column Beer Mail into 2 columns (better for mobile) */
+        .beer-mail-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    
+        /* Adjust the dedication for smaller screens */
+        .dedication {
+            font-size: 1.2rem;
+            padding: 30px 20px;
+        }
+    }
+    
 </style>
 
 <article class="beer-gratitude-article" style="max-width: 800px; margin: 0 auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px;">
