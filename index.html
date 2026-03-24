@@ -55,6 +55,36 @@
             padding: 30px 20px;
         }
     }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    .beer-gratitude-article {
+        max-width: 800px; 
+        margin: 0 auto; 
+        font-family: 'Georgia', serif; /* Matching the Olympics classy serif look */
+        line-height: 1.8; /* Giving the lines room to breathe */
+        color: #2d3436; /* Using the Olympics 'text-main' color */
+        padding: 20px;
+    }
+    
+    .beer-gratitude-article p {
+        font-size: 1.2rem; /* Slightly larger than before for mobile clarity */
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .beer-gratitude-article {
+            padding: 15px; /* Less padding on the edges so text can be wider */
+        }
+        
+        .beer-gratitude-article h1 {
+            font-size: 2.2rem; /* Shrink the massive header so it fits on one screen */
+        }
+    
+        .beer-gratitude-article p {
+            font-size: 1.1rem; /* Keeps it legible without being 'giant' */
+            line-height: 1.7;
+        }
+    }
     
 </style>
 
