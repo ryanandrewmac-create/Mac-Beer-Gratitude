@@ -10,8 +10,8 @@
             margin: 0;
             padding: 0;
             background-color: #f4f7f9; /* Soft Olympics-style background */
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
             color: #2d3436;
         }
 
@@ -25,13 +25,42 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.05);
             border-radius: 4px;
             box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
+        header {
+            text-align: center; 
+            padding: 60px 0; /* Increased padding for a more "Olympic" hero feel */
+            border-bottom: 2px solid #eee; 
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* This ensures all elements are physically centered in the flex box */
+        }
+        
+        header p.byline {
+            text-transform: uppercase; 
+            font-size: 0.9rem; 
+            letter-spacing: 2px; 
+            color: #999; 
+            margin: 0 0 20px 0;
+        }
+        
+        header p.intro {
+            font-style: italic; 
+            font-size: 1.2rem; 
+            color: #666; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            line-height: 1.5;
+        }
+        
         /* Typography */
         h1 { 
             font-family: sans-serif; 
             letter-spacing: 4px; 
             text-transform: uppercase; 
+            margin-bottom: 10px;
             margin: 0; 
             font-size: 2.8rem; 
             line-height: 1.2;
@@ -108,8 +137,8 @@
 <article class="beer-gratitude-article">
     <header style="text-align: center; padding: 40px 0; border-bottom: 2px solid #eee; margin-bottom: 40px;">
         <h1>Beer Gratitude</h1>
-        <p style="text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; color: #999; margin-bottom: 20px;">By Ryan Mac</p>
-        <p style="font-style: italic; font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">A story about the kindness and generosity of our amazing homebrewing community.</p>
+        <p class="byline">By Ryan Mac</p>
+        <p class="intro">A story about the kindness and generosity of our amazing homebrewing community.</p>
     </header>
 
     <section>
