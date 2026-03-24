@@ -118,6 +118,29 @@
         .lb-prev { left: 20px; } .lb-next { right: 20px; }
         .lb-close { position: absolute; top: 20px; right: 20px; color: white; font-size: 2.5rem; cursor: pointer; }
 
+        /* Pull Quote Style */
+        .pull-quote {
+            font-family: sans-serif; /* High-contrast against the body text */
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #2c3e50; /* Matches your dark slate theme */
+            text-align: center;
+            margin: 3rem auto;
+            padding: 2rem 0;
+            border-top: 2px solid #f39c12; /* Using your orange as an accent */
+            border-bottom: 2px solid #f39c12;
+            max-width: 80%; /* Keeps it contained so it looks like a call-out */
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 768px) {
+            .pull-quote {
+                font-size: 1.3rem;
+                max-width: 95%;
+                padding: 1.5rem 0;
+            }
+        }
+        
         /* MOBILE RESPONSIVENESS (MATCHES OLYMPICS SITE) */
         @media (max-width: 768px) {
             .beer-gratitude-article { padding: 1.5rem; width: 95%; margin-top: 1rem; }
@@ -181,7 +204,7 @@
         <p>As if that wasn’t generous enough, the TBC group also took up a collection and made a donation to the scholarship fund that our family set up in my dad’s name at his alma mater. On top of that, they even sent me a giftcard to my local homebrew shop (shoutout to Gnome Brew, they’re the best!) I was, and still am, completely blown away by the thoughtfulness and generosity of this group of internet friends. It’s a true testament to our amazing club, but also to the homebrewing community as a whole.</p>
         <p>As I reflect on everything that happened, I want to say a wholehearted thank you to The Brü Club for everything they’ve done... Specifically, I’d like to thank <strong>Alex Shanks-Abel</strong>, who I recently learned was the primary organizer of the club’s efforts which I’m sure was no small task. Thanks as well to the following folks who spent their time, effort, and money to send me beer: <strong>Aaron Mathieu, Alex Zwerdling, Andre Koehrer, Frank Osborne, Haven Schultz, Robert Dugan, Scott Gordon, Trevor Tyner</strong></p>
         
-        <div class="dedication">Cheers to this amazing homebrewing community!</div>
+        <div class="pull-quote">Cheers to this amazing homebrewing community!</div>
 
         <p style="margin-top: 30px; font-weight: bold; font-size: 1.1rem; color: #000;">— Ryan Mac</p>
     </section>
