@@ -51,8 +51,9 @@
             font-size: 1.2rem; 
             color: #666; 
             max-width: 600px; 
-            margin: 0 auto; 
+            margin: 0 auto; /* The 'auto' here is what forces the centering */
             line-height: 1.5;
+            text-align: center; /* This ensures the text inside the 600px box is also centered */
         }
         
         /* Typography */
@@ -150,22 +151,22 @@
     <div style="margin: 40px 0;">
         <div style="margin-bottom: 30px;">
             <img src="ken1.jpg" class="gallery-img" onclick="openLightbox(0)" alt="Ken 1" style="display: block;">
-            <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">The Mac family in advance of my wedding</p>
+            <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">My parents, sister, and brother-in-law get ready for my wedding.</p>
         </div>
 
         <div style="margin-bottom: 30px;">
             <img src="ken2.jpg" class="gallery-img" onclick="openLightbox(1)" alt="Ken 2" style="display: block;">
-            <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Sampling beers in Phoenix</p>
+            <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Sampling beers in Phoenix with my brother-in-law, wife, sister, and dad.</p>
         </div>
 
         <div class="ken-grid">
             <div>
                 <img src="ken3.jpg" class="gallery-img" onclick="openLightbox(2)" alt="Ken 3" style="height: 350px; object-fit: cover;">
-                <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Red Wings in Sweden</p>
+                <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Following the Red Wings in Sweden and sampling NA beers.</p>
             </div>
             <div>
                 <img src="ken4.jpg" class="gallery-img" onclick="openLightbox(3)" alt="Ken 4" style="height: 350px; object-fit: cover;">
-                <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Rooting on the Wolverines</p>
+                <p style="font-style: italic; font-size: 0.9rem; color: #666; margin-top: 5px; text-align: center;">Rooting on our Wolverines over a cold beer.</p>
             </div>
         </div>
     </div>
